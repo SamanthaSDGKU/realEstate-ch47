@@ -1,0 +1,32 @@
+/*desktop*/
+header.contact-header{
+    background-color:rgb(225, 149, 9);
+    height: 200px;
+}
+.form-container{
+    background-color: #dedede;
+    padding:10px;
+}
+fieldset{
+    border:1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    margin-top: 20px;
+}
+.form-control{
+    margin-bottom: 10px;
+}
+.form-control input,
+.form-control textarea,
+.form-control select{
+    width: 80%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+/*mobile*/
+@media(max-width:768px){
+    header.contact-header{
+        background-color: red;
+    }
+}

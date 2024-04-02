@@ -1,15 +1,146 @@
 /*global*/
-*{
-    padding: 0;
-    margin: 0;
+:root{
+    --primary:rgb(225, 149, 9);
+    --secondary:#ededed;
 }
-body{
-    font-family: arial;
-}
-a{
-    color:black;
-    text-decoration: none;
-}
-/*utilities*/
 
+/*utilities*/
+.container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-details{
+    display: block;
+    background-color: var(--primary);
+    color:white;
+    padding:1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.table{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+}
+td,th{
+    padding:0.5rem;
+    border-bottom: 1px solid white;
+}
+.table-header{
+    background-color: var(--primary);
+    color:white;
+}
+.text-center{
+    text-align: center;
+}
+.table-content{
+    background-color: var(--secondary);
+}
+.main-text{
+    font-weight: 900;
+}
+.secondary-text{
+    font-weight: 700;
+}
+.light-text{
+    font-weight: 300;
+}
 /*header*/
+.site-header{
+    background-image: url(../img/header.jpg);
+    height: 40vh;
+    background-size: cover;
+    color:white;
+}
+.site-header a{
+    color:white;
+    margin-right:3rem;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+.header-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32vh;
+}
+.header-text-container p{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+/*mobile menu*/
+
+.mobile-menu{
+    display: none;
+    width: 25px;
+}
+@media(max-width:768px){
+    .mobile-menu{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+}
+#menu:target{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+}
+/*about*/
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about-item{
+    padding: 1rem;
+    margin:1rem;
+    text-align: justify;
+}
+.about-item h3{
+    text-align: center;
+}
+.about-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:768px){
+    .about-container{
+        flex-direction: column;
+    }
+}
+/*house-container*/
+.houses-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+
+.house-item{
+    background-color:var(--secondary);
+}
+
+.house-text{
+    padding: 1rem;
+}
+.price{
+    color:rgb(32, 94, 32);
+}
+.house-item ul{
+    list-style-type: none;
+}
+
+/*contact*/
+
+
+/*form*/
+

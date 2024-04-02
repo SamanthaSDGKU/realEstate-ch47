@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1,h2,h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+}
+
+.container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
